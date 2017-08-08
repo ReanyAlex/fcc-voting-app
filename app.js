@@ -29,8 +29,9 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 //=========================
+var url = process.env.DATABASEURL || "mongodb://localhost/voting_app"
+mongoose.connect(url);
 
-mongoose.connect("mongodb://localhost/voting_app")
 
 app.use(bodyParser.urlencoded({
   extended: true
