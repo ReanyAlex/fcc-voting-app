@@ -1,0 +1,28 @@
+{
+  "name": "voting_app",
+  "version": "1.0.0",
+  "description": "FCC voting app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Reany",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.6.0",
+    "distinct-colors": "^1.0.4",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "jsdom": "^11.1.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.10.4",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "request": "^2.81.0",
+    "save": "^2.3.1"
+  }
+}

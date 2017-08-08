@@ -1,0 +1,23 @@
+.center{
+  text-align: center;
+}
+
+.no-margin-top{
+  margin: 0;
+}
+
+.no-margin-bottom{
+  margin: 0;
+}
+
+.margin-bottom{
+  margin-bottom: 10px;
+}
+
+.margin-top{
+  margin-top: 10px;
+}
+
+.poll-container{
+  border: 1px solid black;
+}

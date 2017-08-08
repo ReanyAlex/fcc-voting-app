@@ -1,0 +1,25 @@
+<% include ../views/partials/header %>
+
+  <div class="container">
+    <header class="jumbotron">
+      <div class="container">
+        <h1>FCC Voting App</h1>
+        <a class="btn btn-primary btn-lg" href="/polls/new">Create a new Poll</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 class="center">Current Polls</h2>
+
+    <div class="center">
+      <% polls.forEach(function(poll){%>
+        <div class="poll-container">
+          <h4 class="no-margin-bottom margin-top"> <%= poll.title %> </h4>
+          <a href="/polls/<%= poll._id%>" class=""><h2 class="no-margin-top margin-bottom"> <%= poll.description %> </h2></a>
+        </div>
+      <% }); %>
+    </div>
+    </div>
+  </div>
+
+<% include ../views/partials/footer %>
