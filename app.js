@@ -49,6 +49,6 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/polls", pollsRoutes);
 
-app.listen(3000, function() {
-  console.log('Voting App on port 3000!')
+app.listen(process.env.PORT || 3000, process.env.IP, function() {
+  console.log('Voting App is running!')
 });
